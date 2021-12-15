@@ -1,0 +1,116 @@
+body{
+    background-color: #f3fafd;
+}
+        
+        #dashboardHeader{
+            position: fixed;
+            width: 100%;
+            height: 66px;
+            color: #818181;
+            background-color: #45b3e0;
+            top: 0px;
+        }
+        #dashboardHeader h1{
+            padding-left: 190px;
+            font-size: 30px;
+            color: black;
+        }
+        #clock{
+            position: absolute;
+            text-align: center;
+            left: 500px;
+            top: 230px;
+            border: 2px #2d2d2d;
+            border-radius: 18px;
+            width: 400px;
+            height: 200px;
+            line-height: 0px;
+            background-color: #c9e9f6;
+
+        }
+        #punch-btn{
+            left: 500px;
+        }
+        #date{
+            font-size: 30px;
+            padding: 0px;
+            padding-top: 0px;
+            color: #2d2d2d;
+        }
+        #time{
+            margin-top: 70px;
+            font-size: 60px;
+            color: #2d2d2d;
+            font-weight: bold;
+        }
+        #btn{
+            position: absolute;
+            left: 605px;
+            top: 450px;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            border: 1px solid black;
+            border-radius: 22px;
+            background-color: "#79E052";
+        }
+        #clockin{
+        }
+        .sidenav {
+                height: 100%;
+                width: 160px;
+                min-width: 10%;
+                position: fixed;
+                z-index: 1;
+                font-weight: bold;
+                top: 0;
+                left: 0;
+                background-color: #45b3e0;
+                overflow-x: hidden;
+                padding-top: 66px;
+            }
+            
+
+            .sidenav a:hover{
+                background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class  11.01*/
+            .sidenav a.active {
+                background-color: #ccc;
+            }
+        
+            .sidenav a {
+                
+                padding: 6px 10px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #000000;
+                display: block;
+            }
+            
+            .current {
+                background-color: #ddd;
+            }
+        
+            /* Style the tab content 11.01*/
+            .tabContent {
+                display: none;
+            }
+            
+            .main {
+                margin-left: 160px; /* Same as the width of the sidenav */
+                font-size: 28px; /* Increased text to enable scrolling */
+                padding: 0px 10px;
+            }
+            
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+                #dashboardHeader h1{font-size: 18px;}
+                #dashboardHeader{height: 38px;}
+            }

@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Add Employee</title>
+
+    <link href="AddEmployeeStyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <script>
+    // Trello Card 11.03
+        function Validate() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm_password").value;
+            if(password == "") {  
+                alert("Fill the password please!");  
+                return false;  
+            }
+            else if(password.length < 8) {
+                alert("Password length must be at least 8.")
+                return false;
+            }
+            else if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <div id="addUser" class="addU">
+        <h1>Add Employee</h1>
+        <div id="accountSettings">
+            <form action="./add_emp_form.php" method="POST">
+                <table>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td><input type="text" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Username</label></td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" name ="pass" id="password"  onchange="return Validate()" required></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password</label></td>
+                    <td><input type="password" id="confirm_password" onchange="return Validate()" required></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="text" name="email" required></td>
+                </tr>
+                </table>
+                <div id = "options">
+                    <h3>Is a Manager?</h3>
+                    
+                  <label for="yes">Yes</label><br>
+                  <input type="radio" id="yes" name="x" value="Yes" required>
+                  <label for="No">No</label><br>
+                  <input type="radio" id="no" name="x" value="No">
+                 </div>
+                <input type="submit" id="in_button" name="input_button" value="Add Employee"/>
+            </form>
+        </div>
+    </div> 
+</body>
+</html>
+
+
+
+
+

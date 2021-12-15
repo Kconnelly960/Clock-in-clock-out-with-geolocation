@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Create Business</title>
+    <!-----------------------  CSS style  ----------------------------->
+    <link href="AddBusinessStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="addBusiness" class="addB">
+        <h1>Create Business Account</h1>
+        <div id="accountSettings">
+            <form action="./add_business.php" method="POST">
+                <table>
+                    <tr>
+                        <th class="left">Company Name</th>
+                        <th> <input type="text" name="company_name" required> </th>
+                    </tr>
+                </table>
+                <h2>Administrator Information</h2>
+                <table>
+                    <tr>
+                        <th class="left">First Name</th>
+                        <th> <input type="text" name="first_name" required> </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Last Name</th>
+                        <th> <input type="text" name="last_name" required> </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Email</th>
+                        <th> <input type="text" name="email" required> </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Username</th>
+                        <th> <input type="text" name="username" required> </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Password</th>
+                        <th> <input id="bpwd" type="password" name="password" onchange="return Validate()" required> </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Confirm Password</th>
+                        <th> <input id="cbpwd" type="password" name="confirm_password" onchange="return Validate()" required> </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Enter Location Coordinates (xx.xxxx, xx.xxxx)</th>
+                        <th> <input type="text" name="location" required> </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Enter maximum distance from work site in meters</th>
+                        <th> <input type="number" name="maxD" min="0" step="10" required> </th>
+                    </tr>
+                    <tr>
+                        <th class="left">Enter location site name (optional)</th>
+                        <th> <input type="text" name="site_name"></th>
+                    </tr>
+                </table>
+                <input id="in_button" type="submit" value="Create Company Account"/>
+            </form>
+        </div>
+    </div> 
+    <script  type="text/javascript">
+    
+    // Trello Card 11.03
+        function Validate() {
+            var password = document.getElementById("bpwd").value;
+            var confirmPassword = document.getElementById("cbpwd").value;
+            if(password == "") {  
+                alert("Fill the password please!");  
+                 return true;
+            }
+            else if(password.length < 8) {
+                alert("Password length must be at least 8.")
+                 return true;
+            }
+            else if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                 return true;
+            }
+             return false;
+        }
+    </script>
+</body>
+</html>

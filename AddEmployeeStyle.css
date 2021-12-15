@@ -1,0 +1,46 @@
+body {background-color: #45b3e0;}
+
+h1{
+    text-align: center;
+}
+.addU{
+
+    background-color: #f3fafd;
+    border-radius: 25px;
+    width: 500px;
+    padding: 10px;
+    position:relative;
+    margin: auto;
+    height:auto;
+    box-shadow: 5px 5px 5px 5px #3996bb;
+}
+
+table {
+    position:relative;
+    margin-left:85px;
+    height:auto;
+    z-index: 0;
+    text-align:left;
+    width: 350px;
+}
+
+.left{
+    width: 200px;
+    height: 30px;
+}
+
+#in_button {
+    margin-top: 15px;
+    margin-left: 40%;
+    margin-right: -60%;
+}
+
+#options{
+    display: flex;
+    margin-left: 85px;
+}
+
+#options input, #options label{
+    margin-top: 23px;
+    margin-left: 5px;
+}
