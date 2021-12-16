@@ -1,6 +1,6 @@
 # Clock-in-clock-out-with-geolocation
 
-Authors: Kevin Connelly, Julie Bowes, Racheal, Bwahana, Chen
+Authors: Kevin Connelly, Julie Bowes, Racheal Dietz, Bwahana, Chen
 
 This website was created for the "Software Engineering" class. This was a group project consisting of six people. 
 The goal of the project was to design a clock-in/clock-out system. 
