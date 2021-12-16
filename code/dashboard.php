@@ -210,7 +210,7 @@ if(navigator.geolocation){
         
         if(d <= maxDistance){
             toggleCol();
-            let url = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCz6DLiLoYuePSwAbbz-5Sb8F7_evCzp1w&latlng=' + lat + ',' + long;
+            let url = 'https://maps.googleapis.com/maps/api/geocode/json?key=KEY=' + lat + ',' + long;
             $.getJSON(url, function(data) {
                  let parts = data.results[0].address_components;
                  parts.forEach ( part => {
