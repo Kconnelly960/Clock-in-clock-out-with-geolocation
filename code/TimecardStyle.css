@@ -1,0 +1,144 @@
+   body{
+       background-color: #f3fafd;
+        }
+        
+        #dashboardHeader{
+            position: fixed;
+            width: 100%;
+            height: 66px;
+            color: #818181;
+            background-color: #45b3e0;
+            top: 0px;
+        }
+            .current {
+                background-color: #ddd;
+            }
+        #dashboardHeader h1{
+            padding-left: 190px;
+            font-size: 30px;
+            color: black;
+        }
+        
+        #lbtn{
+                position: relative;
+                left: -5%;
+                text-align: center;
+                font-size: 15px;
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                font-weight: bold;
+                border: 1px solid gray;
+                border-radius: 22px;
+        }
+
+        #rbtn{
+            position: relative;
+            left: 5%;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            font-weight: bold;
+            border: 1px solid gray;
+            border-radius: 22px;
+        }
+
+
+        .sidenav {
+                height: 100%;
+                width: 160px;
+                min-width: 10%;
+                position: fixed;
+                z-index: 1;
+                font-weight: bold;
+                top: 0;
+                left: 0;
+                background-color: #45b3e0;
+                overflow-x: hidden;
+                padding-top: 66px;
+            }
+            /* side nav button 11.01*/
+            .sidenav button {
+                background-color: inherit;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                transition: 0.3s;
+                color: #818181;
+                font-size: 25px;
+                text-align: left;
+                padding: 6px 8px 6px 16px;
+                width: 100%;
+                height: 10%;
+            }
+            /* Change background color of buttons on hover 11.01 */
+            .sidenav button:hover{
+                background-color: #ddd;
+            }
+            .sidenav a:hover{
+                background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class  11.01*/
+            .sidenav button.active {
+                background-color: #ccc;
+            }
+        
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #000000;
+                display: block;
+            }  
+            .main {
+                margin-left: 160px; /* Same as the width of the sidenav */
+                font-size: 28px; /* Increased text to enable scrolling */
+                padding: 0px 10px;
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+                #dashboardHeader h1{font-size: 18px;}
+                #dashboardHeader{height: 38px;}
+            }
+
+            table{
+                position: absolute;
+                top: 150px;
+                margin-left:260px;
+                width: 800px;
+                height: 500px;
+                border-collapse: collapse;
+                
+                border: 1px solid #1C6EA4;
+                background-color: #EEEEEE;
+            }
+            table, th, td {
+                border: 1px solid black;
+                text-align: center;
+            }
+            th[scope="col"] {
+                background-color: #696969;
+                color: #fff;
+                width: 90px;
+            }
+
+            th[scope="row"] {
+                background-color: #d7d9f2;
+            }
+            tr:nth-child(even){background-color: white;}
+            tr:nth-child(odd){background-color: white;}
+            
+            .sunPay:hover:after, .monPay:hover:after, .tuePay:hover:after, .wedPay:hover:after, .thurPay:hover:after, .friPay:hover:after, .sayPay:hover:after {
+                    position: absolute;
+    content: attr(title);
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+            }

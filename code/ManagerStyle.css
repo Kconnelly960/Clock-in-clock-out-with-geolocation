@@ -1,0 +1,251 @@
+ body{
+     background-color: #f3fafd;
+        }
+        
+#myInput {
+    position: fixed;
+    background-position: 10px 10px;
+    margin-left: 20%;
+    width: 60%;
+    top: 75px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+}
+         .editSettings{
+             position: fixed;
+            display: none;
+            text-align:left;
+            font-size:25px;
+            margin-left:20%;
+            margin-right:auto;
+            margin-top:5%;
+         }
+
+.current {
+    background-color: #ddd;
+}         
+.editEm{
+    display: none;
+    text-align:left;
+    font-size:25px;
+    margin-left:20%;
+    margin-right:auto;
+    margin-top:5%;
+}
+            
+.EmTimecard{
+    display: none;
+    text-align:left;
+    font-size:25px;
+    margin-left:20%;
+    margin-right:auto;
+    margin-top:6%;
+}
+  
+#clock{
+    position: absolute;
+    text-align: center;
+    left: 500px;
+    top: 230px;
+    border: 2px #2d2d2d;
+    border-radius: 18px;
+    width: 400px;
+    height: 200px;
+    line-height: 0px;
+    background-color: #c9e9f6;
+
+}
+#date{
+    font-size: 30px;
+    padding: 0px;
+    padding-top: 0px;
+}
+#time{
+    margin-top: 70px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#dashboardHeader{
+    position: fixed;
+    width: 100%;
+    height: 66px;
+    color: #818181;
+    background-color: #45b3e0;
+    top: 0px;
+}
+#dashboardHeader h1{
+    padding-left: 190px;
+    font-size: 30px;
+    color: black;
+}
+ 
+        #btn{
+            position: absolute;
+            left: 605px;
+            top: 450px;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            border: 1px solid black;
+            border-radius: 22px;
+            background-color: "#79E052";
+        }
+
+#lbtn{
+        position: relative;
+        left: -15%;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        font-weight: bold;
+        border: 1px solid gray;
+        border-radius: 22px;
+}
+
+#rbtn{
+    position: relative;
+    left: 15%;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 22px;
+}
+
+
+.sidenav {
+                height: 100%;
+                width: 160px;
+                min-width: 10%;
+                position: fixed;
+                z-index: 1;
+                font-weight: bold;
+                top: 0;
+                left: 0;
+                background-color: #45b3e0;
+                overflow-x: hidden;
+                padding-top: 66px;
+            }
+            /* side nav button 11.01*/
+            .sidenav button {
+                background-color: inherit;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                transition: 0.3s;
+                color: #818181;
+                font-size: 25px;
+                text-align: left;
+                padding: 6px 8px 6px 16px;
+                width: 100%;
+                height: 10%;
+            }
+            /* Change background color of buttons on hover 11.01 */
+            .sidenav button:hover{
+                background-color: #ddd;
+            }
+            .sidenav a:hover{
+                background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class  11.01*/
+            .sidenav button.active {
+                background-color: #ccc;
+            }
+        
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #000000;
+                display: block;
+            }  
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+                #dashboardHeader h1{font-size: 18px;}
+                #dashboardHeader{height: 38px;}
+            }
+
+            table {
+                margin-top: 140px;
+                margin-left: 20%;
+                width: 65%;
+                border:1px solid black;
+                border-collapse: collapse;
+                overflow: scroll;
+                max-height: 500px;
+            }
+
+             th, td {
+                text-align: left;
+                padding: 12px;
+            }
+
+            tr {
+                border-bottom: 1px solid #ddd;
+            }
+            th[scope="col"] {
+                background-color: #696969;
+                color: #fff;
+                width: 70px;
+            }
+
+            .tableb{
+                font-size: 12px;
+                background-color: inherit;
+            }
+            
+            table.viewtimeCard{
+                margin-top: 60px;
+                margin-left: 0%;
+                font-size:16px;
+                width: 70%;
+                height: 500px;
+                border-collapse: collapse;
+            }
+        table.viewtimeCard th, table.viewtimeCard td {
+                border: 1px solid black;
+                text-align: center;
+            }
+        table.viewtimeCard th[scope="col"] {
+                background-color: #696969;
+                color: #fff;
+            }
+            
+            tr:nth-child(even){background-color: white;}
+            tr:nth-child(odd){background-color: white;}
+
+        table.viewtimeCard th[scope="row"] {
+                background-color: #d7d9f2;
+            }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+                #dashboardHeader h1{font-size: 18px;}
+                #dashboardHeader{height: 38px;}
+            }
+
+            .add_employee_button{
+                position: relative;
+                top: 50px;
+                left: 20%;
+            }
+            
+            .switch { display:inline-block; }
+            
+            #editSub{
+                display: none;
+            }
