@@ -182,7 +182,7 @@ $site_name = $row3['location_name'];
                //Check if users distance from business location is less than the specified maximum distance
                if(d <= maxDistance){
                    toggleCol();
-                   let url = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCz6DLiLoYuePSwAbbz-5Sb8F7_evCzp1w&latlng=' + lat + ',' + long;
+                   let url = 'https://maps.googleapis.com/maps/api/geocode/json?key=KEY=' + lat + ',' + long;
                    //Get information about users location using reverse geocoding
                    $.getJSON(url, function(data) {
                        let parts = data.results[0].address_components;
